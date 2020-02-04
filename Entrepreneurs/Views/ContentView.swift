@@ -11,7 +11,6 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-                
             DayPlanningView() //planning view
             
             CustomerListView()
@@ -19,7 +18,6 @@ struct ContentView: View {
                     Image(systemName: "person.3")
                     Text("Clients")
             }
-            
             StatisticsView(viewModel: StatisticsViewModel())
                 .tabItem {
                     Image(systemName: "chart.pie")
@@ -28,7 +26,6 @@ struct ContentView: View {
         }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
